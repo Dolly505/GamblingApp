@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+<div>
+           <table>
+                    <tr>
+                        
+                        <td>
+                            <label> Session Win </label>
+                            <label> <%=session[:win] %></label>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Session Loss </label> 
+                            <label><%=session[:lost] %> </label>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">                
+                            <label> Session Profit </label>
+                            <label> <%= session[:win]-session[:lost]%></label>
+                        </td>
+                    </tr>
+                </table>
+ 
+        </div>
+</body>
+</html>

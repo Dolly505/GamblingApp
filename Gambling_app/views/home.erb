@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <div style="height: 50px; background-color: darkgray; text-align: center;padding-top: 3px;margin-bottom: 8px;">
+            <h4>Gambling Site</h4>
+        </div>
+        <div>
+            <label>Place your bet on dice number(1 to 6)</label>
+            <form method="post" action="/bet">
+                <table>
+                    <tr>
+                        <td>Bet Money: </td>
+                        <td><input type="text" name="stake"/></td>                        
+                    </tr>
+                    <tr>
+                        <td>On: </td>
+                        <td><input type="text" name="number"/></td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">                
+                            <input type="submit" name="submit" value="Bet"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <%=erb :session%>
+        <%=erb :total%>
+       <a href='/logout'>Logout</a>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+<div>
+           <table>
+                    <tr>
+                        
+                        <td>
+                            <label> Total Win </label>
+                            <label><%= session[:total_win]%></label>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Total Loss </label> 
+                            <label><%= session[:total_lost]%></label>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">                
+                            <label> Total Profit </label>
+                            <label> <%= session[:total_win]-session[:total_lost]%></label>
+                        </td>
+                    </tr>
+                </table>
+ 
+        </div>
+</body>
+</html>
